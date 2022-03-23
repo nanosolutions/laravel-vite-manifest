@@ -12,7 +12,7 @@ The Laravel Vite Manifest package adds a Blade directive to include Vite's JS an
 ## Usage
 
 ```
-composer require ohseesoftware/laravel-vite-manifest
+composer require nanosolutions/laravel-vite-manifest
 ```
 
 Add the `@vite` directive where you want to include the JS and CSS files:

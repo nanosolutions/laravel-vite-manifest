@@ -21,7 +21,7 @@ class LaravelViteManifest
             return $this->manifestCache;
         }
 
-        $content = file_get_contents(public_path('dist/manifest.json'));
+        $content = file_get_contents(public_path('manifest.json'));
         $this->manifestCache = json_decode($content, true);
 
         return $this->manifestCache;
@@ -59,7 +59,7 @@ class LaravelViteManifest
 
         if (!empty($manifest[$entry]['imports'])) {
             foreach ($manifest[$entry]['imports'] as $imports) {
-                $urls[] = asset('/dist/' . $manifest[$imports]['file']);
+                $urls[] = asset($manifest[$imports]['file']);
             }
         }
         return $urls;
@@ -86,7 +86,7 @@ class LaravelViteManifest
 
         if (!empty($manifest[$entry]['css'])) {
             foreach ($manifest[$entry]['css'] as $file) {
-                $urls[] = asset('/dist/' . $file);
+                $urls[] = asset($file);
             }
         }
         return $urls;
@@ -105,6 +105,6 @@ class LaravelViteManifest
             return '';
         }
 
-        return asset('/dist/' . $manifest[$entry]['file']);
+        return asset($manifest[$entry]['file']);
     }
 }

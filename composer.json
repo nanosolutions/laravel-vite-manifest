@@ -1,12 +1,12 @@
 {
-    "name": "ohseesoftware/laravel-vite-manifest",
+    "name": "nanosolutions/laravel-vite-manifest",
     "description": "Simple Blade directive to include Vite files from a manifest.",
     "keywords": [
         "ohseesoftware",
         "laravel",
         "vite"
     ],
-    "homepage": "https://github.com/ohseesoftware/laravel-vite-manifest",
+    "homepage": "https://github.com/nanosolutions/laravel-vite-manifest",
     "license": "MIT",
     "type": "library",
     "authors": [
